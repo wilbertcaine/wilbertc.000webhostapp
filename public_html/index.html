@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Memory Game: Sign Up or Log In</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="includes/homepage.js"></script>
+</head>
+<body>
+
+<h5>register</h5><br>
+<form action="/insert.php" method="post">
+  username:<input type="text" name="username" id="username">
+  <span id="message"></span>
+  <br>
+  password:<input type="text" name="password" id="password"><br>
+  <input type="submit" value="Sign Up" id="reg">
+</form><br><br>
+
+<h5>login</h5><br>
+<form action="/game.php" method="post">
+  username:<input type="text" name="username" id="user">
+  <span id="match"></span>
+  <br>
+  password:<input type="text" name="password" id="pass"><br>
+  <input type="submit" value="Sign In" id="login">
+</form>
+
+</body>
+</html>
